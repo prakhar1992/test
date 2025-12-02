@@ -9,7 +9,7 @@ def calculate(a, b):
     except Exception as e:
         return f"Error: {e}"
     
-    return result + 10
+    return result + 15
 
 if __name__ == "__main__":
     # Example usage
