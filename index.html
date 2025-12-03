@@ -1,30 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>User Registration and Sign-in</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .error-message {
+            color: red;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
-    <input type="number" id="num1">
-    <select id="operation">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-    </select>
-    <input type="number" id="num2">
-    <button id="calculateButton">Calculate</button>
-    <div id="result"></div>
+    <h1>User Registration</h1>
+    <div id="registration-form">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" data-testid="username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" data-testid="password" name="password">
+        </div>
+        <div class="form-group">
+            <button id="register-button" data-testid="register-button">Register</button>
+        </div>
+        <div id="registration-error" class="error-message" data-testid="registration-error"></div>
+    </div>
 
-    <script src="calculator.js"></script>
+    <h1>User Sign-in</h1>
+    <div id="signin-form">
+        <div class="form-group">
+            <label for="signin-username">Username:</label>
+            <input type="text" id="signin-username" data-testid="signin-username" name="signin-username">
+        </div>
+        <div class="form-group">
+            <label for="signin-password">Password:</label>
+            <input type="password" id="signin-password" data-testid="signin-password" name="signin-password">
+        </div>
+        <div class="form-group">
+            <button id="signin-button" data-testid="signin-button">Sign In</button>
+        </div>
+        <div id="signin-error" class="error-message" data-testid="signin-error"></div>
+    </div>
+
     <script>
-      document.getElementById('calculateButton').addEventListener('click', () => {
-        const num1 = parseFloat(document.getElementById('num1').value);
-        const num2 = parseFloat(document.getElementById('num2').value);
-        const operation = document.getElementById('operation').value;
-        const result = calculate(operation, num1, num2);
-        displayResult(result);
+      // Placeholder for JavaScript (will be replaced by actual logic)
+      document.getElementById('register-button').addEventListener('click', () => {
+        alert('Registration button clicked (placeholder)');
+      });
+      document.getElementById('signin-button').addEventListener('click', () => {
+        alert('Sign In button clicked (placeholder)');
       });
     </script>
 </body>
