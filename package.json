@@ -1,0 +1,27 @@
+{
+  "name": "user-auth-playwright-bdd",
+  "version": "1.0.0",
+  "description": "Automated User Registration and Sign-in Flow with Playwright, TypeScript, POM, and BDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  }, 
+  "keywords": [
+    "playwright",
+    "typescript",
+    "bdd",
+    "pom",
+    "cucumber"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@cucumber/cucumber": "^9.6.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/node": "^20.9.0"
+  }
+}
